@@ -30,3 +30,5 @@ services:
       - POSTGRES_PASSWORD=admin
       - POSTGRES_DB=restyaboard
     restart: always
+    ports:
+      - 5432
