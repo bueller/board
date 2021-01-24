@@ -1,6 +1,8 @@
 version: '2'
 services:
   restyaboard:
+    labels:
+      shipyard.route: '/'
     build: .
     ports:
       - 1234:80
@@ -28,3 +30,5 @@ services:
       - POSTGRES_PASSWORD=admin
       - POSTGRES_DB=restyaboard
     restart: always
+    ports:
+      - "5432"
